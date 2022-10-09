@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(./Fonts/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: 'Roboto-Italic';
+    src: url(./Fonts/Roboto-LightItalic.ttf);
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(./Fonts/Roboto-Bold.ttf);
+}
+:root {
+    --background-color-dark: #1f2937;
+    --cta-background-color: #3882f6;
+    --q-background-color: #e5e7eb;
+    --btn-color: #3882f6;
+    
+}
+*{
+    margin: 0;
+    color: red;
+}
+header {
+    display: flex;
+    background-color: var(--background-color-dark);
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+header logo {
+}
+
+header ul {
+    display: flex;
+    gap: 30px;
+}
+
+
+.top {
+    background-color: var(--background-color-dark);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+
+}
+
+.medium {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.medium h2 {
+    width: 100%;
+}
+
+.medium ul {
+    display: flex;
+    gap: 30px;
+}
+.medium ul li {
+    border-radius: 5%;
+    border: solid black;
+    list-style: none;
+}
+    
