@@ -19,8 +19,10 @@
 }
 *{
     margin: 0;
-    color: red;
 }
+
+
+/*Head section with menu*/
 header {
     display: flex;
     background-color: var(--background-color-dark);
@@ -28,17 +30,17 @@ header {
     align-items: center;
     justify-content: space-around;
     padding: 30px;
-}
-
-header logo {
+    height: 5%;
 }
 
 header ul {
     display: flex;
     gap: 30px;
+    list-style: none;
+
 }
 
-
+/* top section h1 p button and img */
 .top {
     background-color: var(--background-color-dark);
     color: white;
@@ -46,18 +48,35 @@ header ul {
     align-items: center;
     justify-content: space-around;
     padding: 30px;
+    height: 300px;
+
 
 }
 
+.top button {
+    background-color: var(--btn-color);
+    border: none;
+    border-radius: 5px;
+}
+.top img {
+    max-height: 480px;
+    max-width: 320px;
+}
+
+/* medium part with squares */
 .medium {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 30px;
+    height: 300px;
 
 }
 
 .medium h2 {
     width: 100%;
+    text-align: center;
+    padding: 30px;
 }
 
 .medium ul {
@@ -66,7 +85,93 @@ header ul {
 }
 .medium ul li {
     border-radius: 5%;
-    border: solid black;
+    border: solid #3882f6;
     list-style: none;
+    width: 150px;
+    height: 150px;
 }
-    
+.medium ul li img{
+    width: 150px;
+    height: 150px;
+}
+
+.medium ul li p {
+    text-align: center;
+}
+
+/*blockquote*/
+
+blockquote {
+    background-color: var(--q-background-color);
+    display: flex;
+    padding: 30px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+blockquote figcaption { 
+    align-self: flex-end;
+
+}
+
+/*cta element*/
+.ctaframe {
+    background-color: var(--cta-background-color);
+    margin: 10%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+.ctaframe button{
+    background-color: var(--btn-color);
+    border-radius: 5px;
+    border-color: white;
+}
+
+/*footer*/
+
+footer {
+    background-color: var(--background-color-dark);
+    padding: 30px;
+    text-align: center;
+}
+
+/* Text */
+header {
+    font-size: 24px;
+    color: #f9faf8;
+    font-family: 'Roboto', sans-serif;
+}
+header ul{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #e5e7eb
+}
+
+
+.top h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: #f9faf8;
+}
+
+.top p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.medium h2{
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: bold;
+}
+.medium p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #1f2937;
+}
