@@ -21,6 +21,11 @@
     margin: 0;
 }
 
+/*Button*/
+
+button:hover {
+    opacity: 0.5;
+}
 
 /*Head section with menu*/
 header {
@@ -37,7 +42,16 @@ header ul {
     display: flex;
     gap: 30px;
     list-style: none;
+}
 
+header ul a {
+    text-decoration: none;
+    color: aqua;
+    border-bottom: 2px solid limegreen;
+}
+header ul a:hover {
+    border-bottom: 2px solid aqua;
+    color: limegreen
 }
 
 /* top section h1 p button and img */
@@ -59,8 +73,8 @@ header ul {
     border-radius: 5px;
 }
 .top img {
-    max-height: 480px;
-    max-width: 320px;
+    height: 300px;
+    width: 460px;
 }
 
 /* medium part with squares */
@@ -71,6 +85,10 @@ header ul {
     padding: 30px;
     height: 300px;
 
+}
+.medium ul li img:hover {
+  background-color: #3882f6;
+  opacity: 0.5;
 }
 
 .medium h2 {
@@ -170,8 +188,25 @@ header ul{
     color: #1f2937;
     font-weight: bold;
 }
-.medium p{
+.medium p {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     color: #1f2937;
+}
+
+blockquote {
+    font-family: 'Roboto-Italic', sans-serif;
+    font-size: 36px;
+    color: #1f2937;
+}
+footer,
+.ctaframe {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #f9faf8;
+}
+button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #f9faf8;
 }
